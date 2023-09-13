@@ -1,1 +1,4 @@
-# https://kokomog1.github.io/GCPSHALL/
+# GCPSHALL
+
+One click way link<br>
+https://kokomog1.github.io/GCPSHALL/
