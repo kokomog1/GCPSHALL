@@ -102,7 +102,7 @@
             <label for="edtMessage" class="form-label">Server message</label>
             <textarea spellcheck="false" type="text" class="form-control" id="edtMessage"
                       placeholder="Server message">
-                <h1 style="font-weight: bold; text-align: center;"><span style="color: #f40125">G</span><span style="color: #f27401">C</span><span style="color: #f3a101">P</span><span style="color: #1cfd00">&nbsp;</span><span style="color: #019cf0">R</span><span style="color: #344fe6">E</span><span style="color: #6601dc">A</span><span style="color: #9500f9">D</span><span style="color: #f90083">Y</span></h1><p style="text-align: center;">kaungkhantjc.github.io/GCPReady</p>
+                <h1 style="font-weight: bold; text-align: center;"><span style="color: #f40125">G</span><span style="color: #f27401">C</span><span style="color: #f3a101">P</span><span style="color: #1cfd00">&nbsp;</span><span style="color: #019cf0">R</span><span style="color: #344fe6">E</span><span style="color: #6601dc">A</span><span style="color: #9500f9">D</span><span style="color: #f90083">Y</span></h1><p style="text-align: center;">kokomog1.github.io/GCPSHALL</p>
             </textarea>
         </div>
 
@@ -172,7 +172,7 @@
         generateShellCode();
     }
 
-    function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
+    function generateInstanceCodes( username, password, serverMessage) {
         return "bash <(curl -Ls https://raw.githubusercontent.com/kaungkhantjc/GCPReady/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
             .formatUnicorn({                
                 username: username,
