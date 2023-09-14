@@ -127,3 +127,115 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha256-DOneOY3n5+xj6Da3AJBkPHxaPynqSlGaZ9790gbBOsE=" crossorigin="anonymous"></script>
 </body>
+
+<script>
+    $(() => {
+        $('#edtMessage').summernote({
+            height: 120,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['view', ['fullscreen', 'codeview']]
+            ],
+            spellCheck: false
+        }).on('summernote.change', function() {
+               generateShellCode()
+            });
+
+    });
+</script>
+
+<script type="text/javascript">
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+    
+    const username = document.getElementById("edtUsername");
+    const password = document.getElementById("edtPassword");
+    const message = document.getElementById("edtMessage");
+    const shellCode = document.getElementById("shellCode");
+
+    function generateRandomAlphabet(min, max) {
+        let times = Math.floor(Math.random() * (max - min)) + min;
+        let result = "";
+        for (let i = 0; i < times; i++) {
+            result += String.fromCharCode(97 + Math.floor(Math.random() * 26))
+        }
+        return result;
+    }
+
+    function generateRandomStr(input) {
+        input.value = generateRandomAlphabet(4, 8);
+        generateShellCode();
+    }
+
+    function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
+        return "bash <(curl -Ls https://raw.githubusercontent.com/kaungkhantjc/GCPReady/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
+            .formatUnicorn({                
+                username: username,
+                password: password,
+                serverMessage: serverMessage,
+                token: Math.floor(Date.now() / 1000)
+            })
+    }
+
+    function generateShellCode() {
+        shellCode.innerText = generateInstanceCodes(          
+            username.value.replace(/\s+/g, '-'),
+            password.value,
+            message.value.replace(/"/g, '\\"').trim()
+        );
+
+        Prism.highlightElement(shellCode);
+    }
+
+    function copyFromStr(str, button) {
+        navigator.clipboard.writeText(str.trim())
+
+        let tooltip = bootstrap.Tooltip.getInstance(button);
+
+        button.title = "Copied";
+        tooltip.dispose();
+        tooltip = new bootstrap.Tooltip(button);
+        tooltip.show()
+
+        setTimeout(function () {
+            button.title = "Copy";
+            tooltip.dispose();
+            tooltip = new bootstrap.Tooltip(button);
+            tooltip.show()
+        }, 2000)
+
+    }
+
+    function copyFromCode(button) {
+        copyFromStr(button.parentElement.querySelector("code").innerText, button);
+    }
+
+    String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
+        function () {
+            "use strict";
+            let str = this.toString();
+            if (arguments.length) {
+                const t = typeof arguments[0];
+                let key;
+                const args = ("string" === t || "number" === t) ?
+                    Array.prototype.slice.call(arguments)
+                    : arguments[0];
+
+                for (key in args) {
+                    str = str.replace(new RegExp("\\{" + key + "\\}", "gi"), args[key]);
+                }
+            }
+
+            return str;
+        };
+
+    generateRandomStr(firewallName);
+
+
+</script>
+</html>    
