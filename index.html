@@ -84,88 +84,8 @@
 </nav>
 
 <div class="container-fluid">
-
-    <div class="d-flex align-content-end flex-wrap gap-4">
-        <div class="text-nowrap">
-            
-        </div>
-        <div class="text-nowrap">
-            
-        </div>
-        <div class="text-nowrap">
-            
-        </div>
-        <div class="text-nowrap">                   
-            
-        </div>
     
-        <div class="text-nowrap">
-            <a target="_blank" class="btn btn-primary" href="https://www.cloudskillsboost.google/users/sign_in">Sign
-                in</a>
-        </div>
-
-        <div class="btn-group dropdown-menu-lg-end">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="labs" data-bs-toggle="dropdown"
-                    aria-expanded="false">    
-                Labs
-            </button>
-
-            <ol class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><small class="dropdown-item-text">6hr labs</small></li>
-                <li><a target="_blank" class="dropdown-item"
-                       href="https://www.cloudskillsboost.google/focuses/21010?parent=catalog">
-                    1. Adding flows to scale your virtual agent
-                </a></li>
-                <li><a target="_blank" class="dropdown-item"
-                       href="https://www.cloudskillsboost.google/focuses/21008?parent=catalog">
-                    2. Using Cloud Functions in DF CX
-                </a></li>
-                <li><a target="_blank" class="dropdown-item"
-                       href="https://www.cloudskillsboost.google/focuses/21012?parent=catalog">
-                    3. Creating a basic chat virtual agent with DF CX
-                </a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a target="_blank" class="dropdown-item"
-                       href="https://www.cloudskillsboost.google/focuses/20774?parent=catalog">
-                    4. Kubernetes Basics v1.6 (4:30hr)
-                </a></li>
-            </ol>
-
-        </div>
-    </div>
-
-    <div oninput="generateShellCode()" class="row g-2 mt-2">
-
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-            <label for="edtInstanceName" class="form-label">Instance name</label>
-            <div class="input-group">
-                <input spellcheck="false" value="instance-1" type="text" class="form-control" id="edtInstanceName"
-                       placeholder="instance-1">
-                <div class="input-group-append">
-                        <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
-                              onclick="generateRandomStr(document.getElementById('edtInstanceName'))"
-                              class="input-group-text btn btn-primary"
-                        ><i class="bi bi-shuffle"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-            <label for="edtFirewallName" class="form-label">Firewall name</label>
-            <div class="input-group">
-                <input spellcheck="false" value="abc" type="text" class="form-control" id="edtFirewallName"
-                       placeholder="abc">
-                <div class="input-group-append">
-                        <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
-                              onclick="generateRandomStr(document.getElementById('edtFirewallName'))"
-                              class="input-group-text btn btn-primary"
-                        ><i class="bi bi-shuffle"></i></span>
-                </div>
-            </div>
-        </div>
-
+     <div class="d-flex align-content-end flex-wrap gap-3">   
         <div class="col-6 col-md-3 col-lg-2">
             <label for="edtUsername" class="form-label">Username</label>
             <input spellcheck="false" type="text" class="form-control" id="edtUsername"
