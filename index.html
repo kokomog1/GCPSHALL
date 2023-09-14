@@ -133,3 +133,19 @@
 
         </div>
     </div>
+
+    <div oninput="generateShellCode()" class="row g-2 mt-2">
+
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+            <label for="edtInstanceName" class="form-label">Instance name</label>
+            <div class="input-group">
+                <input spellcheck="false" value="instance-1" type="text" class="form-control" id="edtInstanceName"
+                       placeholder="instance-1">
+                <div class="input-group-append">
+                        <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
+                              onclick="generateRandomStr(document.getElementById('edtInstanceName'))"
+                              class="input-group-text btn btn-primary"
+                        ><i class="bi bi-shuffle"></i></span>
+                </div>
+            </div>
+        </div>
