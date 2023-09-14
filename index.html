@@ -29,6 +29,8 @@
     </style>
 </head>
 
+<body class="user-select-none"> 
+    
 <script>
     const _0x246d17 = _0x5030;
     (function (_0x2b8b85, _0xe873e9) {
@@ -175,3 +177,33 @@
             <input spellcheck="false" type="text" class="form-control" id="edtPassword"
                    placeholder="admin" value="admin">
         </div>
+
+        <div class="col-12">
+            <label for="edtMessage" class="form-label">Server message</label>
+            <textarea spellcheck="false" type="text" class="form-control" id="edtMessage"
+                      placeholder="Server message">
+                <h1 style="font-weight: bold; text-align: center;"><span style="color: #f40125">G</span><span style="color: #f27401">C</span><span style="color: #f3a101">P</span><span style="color: #1cfd00">&nbsp;</span><span style="color: #019cf0">R</span><span style="color: #344fe6">E</span><span style="color: #6601dc">A</span><span style="color: #9500f9">D</span><span style="color: #f90083">Y</span></h1><p style="text-align: center;">kaungkhantjc.github.io/GCPReady</p>
+            </textarea>
+        </div>
+
+    </div>
+
+    <div class="alert border clearfix mt-3">
+        <button onclick="copyFromCode(this)"
+                class="btn btn-outline-primary float-end ms-3"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+            <i class="bi bi-clipboard"></i>
+        </button>
+        <code id="shellCode" class="language-bash pe-3"
+              style="background-color: transparent; font-family: monospace; word-wrap: break-word"></code>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/PrismJS/prism@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/PrismJS/prism@1.29.0/components/prism-bash.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha256-BRqBN7dYgABqtY9Hd4ynE+1slnEw+roEPFzQ7TRRfcg=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha256-DOneOY3n5+xj6Da3AJBkPHxaPynqSlGaZ9790gbBOsE=" crossorigin="anonymous"></script>
+</body>
