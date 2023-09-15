@@ -25,15 +25,16 @@ if [[ -n $1 ]] && [[ $2 == e2-* ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $8 ]] 
 
   echo -e "Username: ${green}$5${plain}, Password: ${green}$6${plain}, SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
   echo -e "\nProudly developed by ...${yellow}
-     ___       ___       ___       ___       ___       ___   
-    /\__\     /\  \     /\  \     /\__\     /\  \     /\  \  
-   /:/ _/_   /::\  \   /::\  \   /:/__/_   _\:\  \    \:\  \ 
-  /::-"\__\ /:/\:\__\ /:/\:\__\ /::\/\__\ /\/::\__\   /::\__\
-  \;:;-",-" \:\/:/  / \:\ \/__/ \/\::/  / \::/\/__/  /:/\/__/
-   |:|  |    \::/  /   \:\__\     /:/  /   \:\__\    \/__/   ${plain}(ɔ◔‿◔)ɔ ${red}♥${yellow}
-    \|__|     \/__/     \/__/     \/__/     \/__/            
-${green}https://t.me/kaungkhantx${plain}
+ _  __                         _  ___                 _     _  __
+| |/ /                        | |/ / |               | |   | |/ /
+| ' / __ _ _   _ _ __   __ _  | ' /| |__   __ _ _ __ | |_  | ' /_   _  __ ___      __
+|  < / _\` | | | | '_ \ / _\` | |  < | '_ \ / _\` | '_ \| __| |  <| | | |/ _\` \ \ /\ / /
+| . \ (_| | |_| | | | | (_| | | . \| | | | (_| | | | | |_  | . \ |_| | (_| |\ V  V /
+|_|\_\__,_|\__,_|_| |_|\__, | |_|\_\_| |_|\__,_|_| |_|\__| |_|\_\__, |\__,_| \_/\_/  ${plain}(ɔ◔‿◔)ɔ ${red}♥${yellow}
+                        __/ |                                    __/ |
+                       |___/                                    |___/ ${green}https://t.me/kaungkhantx${plain}
 "
+
 else
   echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
 fi
