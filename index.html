@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>GCPSHALL 4</title>
+    <title>GCPSHALL 3</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/input-onlinepngtools.jpg.png"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -76,7 +76,7 @@
         <a class="navbar-brand">
             <!--suppress CheckImageSize -->
             <img src="./assets/input-onlinepngtools.jpg.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-            <span class="ps-3 fw-semibold">GCPSHALL 4</span>
+            <span class="ps-3 fw-semibold">GCPSHALL 3</span>
             <a target="_blank" class="float-end btn btn-outline-primary" href="https://t.me/kochitt">Contact
                 Developer</a>
         </a>
@@ -85,15 +85,15 @@
 
 <div class="container-fluid">
 
-    <div class="d-flex align-content-end flex-wrap gap-3">
+    <div class="d-flex align-content-end flex-wrap gap-2">
         <div class="text-nowrap">
             
         </div>
         <div class="text-nowrap">
-            <a class="btn btn-primary" href=./v2/index.html">V2</a>
+            <a class="btn btn-primary" href=./v2/index.html">V1</a>
         </div>
         <div class="text-nowrap">
-            <a class="btn btn-primary" href="./v3/index.html">V3</a>
+            <a class="btn btn-primary" href="./v3/index.html">V2</a>
         </div>
 
         <div class="text-nowrap">
@@ -138,8 +138,8 @@
         <div class="col-6 col-sm-6 col-md-3 col-lg-2">
             <label for="edtInstanceName" class="form-label">Instance name</label>
             <div class="input-group">
-                <input spellcheck="false" value="instance-1" type="text" class="form-control" id="edtInstanceName"
-                       placeholder="instance-1">
+                <input spellcheck="false" value="cluster-502-m" type="text" class="form-control" id="edtInstanceName"
+                       placeholder="cluster-502-m">
                 <div class="input-group-append">
                         <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
                               onclick="generateRandomStr(document.getElementById('edtInstanceName'))"
@@ -152,8 +152,8 @@
         <div class="col-6 col-sm-6 col-md-3 col-lg-2">
             <label for="edtFirewallName" class="form-label">Firewall name</label>
             <div class="input-group">
-                <input spellcheck="false" value="abc" type="text" class="form-control" id="edtFirewallName"
-                       placeholder="abc">
+                <input spellcheck="false" value="firerule" type="text" class="form-control" id="edtFirewallName"
+                       placeholder="firerule">
                 <div class="input-group-append">
                         <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
                               onclick="generateRandomStr(document.getElementById('edtFirewallName'))"
@@ -209,16 +209,20 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-2">
             <label for="regionZone" class="form-label">Region zone</label>
             <select id="regionZone" class="form-select" aria-label="Region zone">
+                <option value="asia-east1">Taiwan (asia-east1)</option>
                 <option value="asia-east1-b">Taiwan (asia-east1-b)</option>
                 <option value="asia-east1-a">Taiwan (asia-east1-a)</option>
                 <option value="asia-east1-c">Taiwan (asia-east1-c)</option>
-                <option selected value="asia-southeast1-b">Singapore (asia-southeast1-b)</option>
+                <option selected value="asia-southeast1">Singapore (asia-southeast1)</option>
+                <option value="asia-southeast1-b">Singapore (asia-southeast1-b)</option>
                 <option value="asia-southeast1-a">Singapore (asia-southeast1-a)</option>
                 <option value="asia-southeast1-c">Singapore (asia-southeast1-c)</option>
+                <option value="us-central1">US Central (us-central1)</option>
                 <option value="us-central1-c">US Central (us-central1-c)</option>
                 <option value="us-central1-a">US Central (us-central1-a)</option>
                 <option value="us-central1-f">US Central (us-central1-f)</option>
                 <option value="us-central1-b">US Central (us-central1-b)</option>
+                <option value="us-west1">Oregon (us-west1)</option>
                 <option value="us-west1-b">Oregon (us-west1-b)</option>
                 <option value="us-west1-c">Oregon (us-west1-c)</option>
                 <option value="us-west1-a">Oregon (us-west1-a)</option>
