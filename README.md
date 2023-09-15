@@ -4,8 +4,8 @@ One click way link<br>
 ```
 https://kokomog1.github.io/GCPSHALL/
 ```
-ScreeShoot view<br>
+ScreenShoot view<br>
 <p align="left">
   <a href="" rel="noopener">
- <img width=550px height=550px src="https://github.com/NyeinKoKo/blob/main/icons/photo_2021-12-01_07-36-12.jpg?raw=true?raw=true" alt="logo"></a>
+ <img width=550px height=550px src="https://github.com/kokomog1/GCPSHALL/blob/main/assets/Screenshot_2023-09-15-14-28-03-510-edit_com.chrome.beta.jpg?raw=true?raw=true" alt="logo"></a>
 </p>
