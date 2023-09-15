@@ -18,7 +18,7 @@ useradd "$1" --shell=/bin/false -M
 echo "$1:$2" | chpasswd
 
 else
-  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
+  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kochitt for more information.${plain}"
 fi
 
 echo ""
@@ -28,12 +28,13 @@ echo "------------------------------------"
 echo ""
 
 echo -e "${yellow}
- _  __                         _  ___                 _     _  __
-| |/ /                        | |/ / |               | |   | |/ /
-| ' / __ _ _   _ _ __   __ _  | ' /| |__   __ _ _ __ | |_  | ' /_   _  __ ___      __
-|  < / _\` | | | | '_ \ / _\` | |  < | '_ \ / _\` | '_ \| __| |  <| | | |/ _\` \ \ /\ / /
-| . \ (_| | |_| | | | | (_| | | . \| | | | (_| | | | | |_  | . \ |_| | (_| |\ V  V /
-|_|\_\__,_|\__,_|_| |_|\__, | |_|\_\_| |_|\__,_|_| |_|\__| |_|\_\__, |\__,_| \_/\_/  ${plain}(ɔ◔‿◔)ɔ ${red}♥${yellow}
-                        __/ |                                    __/ |
-                       |___/                                    |___/ ${green}https://t.me/kaungkhantx${plain}
-"
+echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+echo -e "${GREEN}  __  __      _____       ____       __  __      ______      ______          ${plain}"
+echo -e "${GREEN} /\ \/\ \    /\  __`\    /\  _`\    /\ \/\ \    /\__  _\    /\__  _\         ${plain}"
+echo -e "${GREEN} \ \ \/'/'   \ \ \/\ \   \ \ \/\_\  \ \ \_\ \   \/_/\ \/    \/_/\ \/         ${plain}"
+echo -e "${GREEN}  \ \ , <     \ \ \ \ \   \ \ \/_/_  \ \  _  \     \ \ \       \ \ \         ${plain}"
+echo -e "${GREEN}   \ \ \\`\    \ \ \_\ \   \ \ \L\ \  \ \ \ \ \     \_\ \__     \ \ \        ${plain}"
+echo -e "${GREEN}    \ \_\ \_\   \ \_____\   \ \____/   \ \_\ \_\    /\_____\     \ \_\       ${plain}"
+echo -e "${GREEN}     \/_/\/_/    \/_____/    \/___/     \/_/\/_/    \/_____/      \/_/       ${plain}"
+echo -e "${pink}                   https://t.me/kochitt                                       ${plain}"
+echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
