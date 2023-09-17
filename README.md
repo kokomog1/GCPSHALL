@@ -16,7 +16,7 @@ ___Credits___
 
 <p>see on <a href="https://github.com/kaungkhantjc/GCPReady/wiki/Credits" target="_blank" rel="noopener">wiki</a></p>
 <p>see on <a href="https://github.com/kaungkhantjc/GCPReady" target="_blank" rel="noopener">Telegra.ph</a>&nbsp;</p>
-  <P><b><i> 💐💐 To everyone who gave me advice and ideas.Thank Kaung Khant💐💐 </i></b></p>
+  <P><b><i> 💐💐 To everyone who gave me advice and ideas.💐💐 </i></b></p>
 
 ## ㅤ
 
