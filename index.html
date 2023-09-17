@@ -290,12 +290,7 @@
     const message = document.getElementById("edtMessage");
     const shellCode = document.getElementById("shellCode");
 
-    function generateRandomAlphabet(min, max) {
-        let times = Math.floor(Math.random() * (max - min)) + min;
-        let result = "";
-        for (let i = 0; i < times; i++) {
-            result += String.fromCharCode(97 + Math.floor(Math.random() * 26))
-        }
+    
         return result;
     }
 
@@ -305,7 +300,7 @@
     }
 
     function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
-        return "bash <(curl -Ls https://raw.githubusercontent.com/kokomog1/GCPSHALL/main/V4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
+        return "bash <(curl -Ls https://raw.githubusercontent.com/kokomog1/GCPSHALL/main/V4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\""
             .formatUnicorn({
                 instanceName: instanceName,
                 machineType: machineType,
@@ -314,7 +309,7 @@
                 username: username,
                 password: password,
                 serverMessage: serverMessage,
-                token: Math.floor(Date.now() / 1000)
+                
             })
     }
 
