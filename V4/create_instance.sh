@@ -9,7 +9,7 @@ plain='\033[0m'
 if [[ -n $1 ]] && [[ $2 == e2-* ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $8 ]] && [[ $(($(date +%s) - $8)) -lt 120 ]] && [[ $(($(date +%s) - $8)) -ge 0 ]]; then
 
   echo -e "${yellow}Creating instance ...${plain}"
-  instance=$(gcloud compute instances create "$1" --machine-type "$2" --zone "$3" --metadata=startup-script="bash <(curl -Ls https://raw.githubusercontent.com/kaungkhantjc/GCPReady/main/v4/install.sh) '$5' '$6' '$7' '$8'" --tags=http-server,https-server)
+  instance=$(gcloud compute instances create "$1" --machine-type "$2" --zone "$3" --metadata=startup-script="bash <(curl -Ls https://raw.githubusercontent.com/kokomog1/GCPSHALL/main/V4/install.sh) '$5' '$6' '$7' '$8'" --tags=http-server,https-server)
   echo -e "${green}Instance created.${plain}"
 
   echo -e "${yellow}Checking firewall rule ...${plain}"
