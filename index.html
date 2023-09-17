@@ -290,7 +290,12 @@
     const message = document.getElementById("edtMessage");
     const shellCode = document.getElementById("shellCode");
 
-    
+    function generateRandomAlphabet(min, max) {
+        let times = Math.floor(Math.random() * (max - min)) + min;
+        let result = "";
+        for (let i = 0; i < times; i++) {
+            result += String.fromCharCode(97 + Math.floor(Math.random() * 26))
+        }
         return result;
     }
 
@@ -309,7 +314,7 @@
                 username: username,
                 password: password,
                 serverMessage: serverMessage,
-                
+                token: Math.floor(Date.now() / 1000)
             })
     }
 
