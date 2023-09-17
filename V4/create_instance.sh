@@ -35,6 +35,6 @@ if [[ -n $1 ]] && [[ $2 == e2-* ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $8 ]] 
                        |___/                                    |___/ ${green}https://t.me/kaungkhantx${plain}
 "
 
-else
-  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
-fi
+#else
+  #echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
+#fi
